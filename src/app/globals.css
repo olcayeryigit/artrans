@@ -2,3 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Ok animasyonu */
+@keyframes arrowAnimation {
+	0% {
+	  opacity: 0;
+	  transform: translateX(0) scale(0);
+	}
+	50% {
+	  opacity: 1;
+	  transform: translateX(10px) scale(1.5);
+	}
+	100% {
+	  opacity: 0;
+	  transform: translateX(20px) scale(0);
+	}
+  }
+  
+  /* Arrow div için animasyon */
+  .arrow {
+	font-size: 36px; /* Ok simgesinin boyutu */
+	color: #ff6f61 !important; /* Ok simgesinin rengi */
+	animation: arrowAnimation 2s infinite; /* Animasyonu uygula */
+  }
+  
+
+  /* Swiper pagination butonları için özel stiller */
+  .swiper-pagination {
+	position: absolute;
+	top: 160px !important;
+	left: 95% !important;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+  }
+  
+  .swiper-pagination-bullet {
+	width: 16px !important;
+	height: 16px !important;
+	background-color: rgb(255, 255, 255) !important;
+	border-radius: 50%;
+	opacity:1 !important ;
+  }
+  
+  .swiper-pagination-bullet-active {
+	background-color: #ACFC03 !important;
+  }
+  
