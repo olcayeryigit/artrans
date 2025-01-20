@@ -99,13 +99,17 @@ const Header = () => {
             href="tel:+905301533475"
             className="hover:text-[#ACFC03] transition duration-300 ease-in-out"
           >
-            +90 530 153 34 75
+     <span>Anıl Çaylar: </span>  
+           <span className='ps-4'>+90 530 153 34 75</span>  
           </Link>
           <Link
             href="tel:+905393661709"
             className="hover:text-[#ACFC03] transition duration-300 ease-in-out"
           >
-            +90 539 366 1709
+                 <span>Mahir Çaylar: </span>  
+
+            <span className='ps-4'>+90 539 366 1709</span>  
+
           </Link>
         </div>
       </div>
