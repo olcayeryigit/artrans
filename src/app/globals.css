@@ -48,3 +48,18 @@
 	background-color: #ACFC03 !important;
   }
   
+
+  /**/
+  @media (max-width: 768px) {
+	.swiper-pagination {
+	  position: static; /* absolute yerine static yaparak normal akışa bırakır */
+	  bottom: 0; /* Alt kısma sabitle */
+	  left: 50%; /* Orta hizalama */
+	  transform: translateX(-50%); /* Tam ortada hizalar */
+	  flex-direction: row; /* Yatay hizalama */
+	  justify-content: center; /* Yatayda ortalamak için */
+	  gap: 16px; /* Yatayda daha fazla boşluk */
+	}
+  }
+
+ 

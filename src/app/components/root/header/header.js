@@ -14,49 +14,54 @@ const Header = () => {
     <header id="home" className="flex justify-between items-center p-4 bg-black">
       {/* Logo */}
       <div className="flex items-center">
-        <Logo
+        <div className="hidden md:inline">
+          <Logo
           src="/logo/logo.png"
           height="85px"
           alt="Logo"
-          className="object-contain"
         />
+    </div>
+        
+
+    <div className="md:hidden">
+          <Logo
+          src="/logo/logo.png"
+          height="50px"
+          alt="Logo"
+        />
+    </div>
+
       </div>
 
-      {/* Mobile Hamburger Icon */}
-      <div className="lg:hidden flex items-center">
-        <button onClick={toggleMenu} className="text-white">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 6h18M3 12h18M3 18h18"></path></svg>
-        </button>
-      </div>
-
+ 
       {/* Navigasyon Menüsü (Desktop & Mobile) */}
       <nav>
-        <ul className={`lg:flex space-x-6 ${isMenuOpen ? 'flex flex-col items-center absolute top-20 left-0 w-full bg-black py-4' : 'hidden'}`}>
+        <ul className={`bg-white  md:bg-black text-black md:text-white lg:flex space-x-2 text-center md:text-start md:space-x-6  ${isMenuOpen ? 'flex flex-col gap-2 md:gap-0  absolute top-20 left-0 w-full bg-black py-4 z-[999999]' : 'hidden'}`}>
           <li>
             <Link 
               href="#home" 
-              className="text-white font-bold hover:text-[#ACFC03] transition duration-300 ease-in-out">
+              className="font-bold hover:text-[#ACFC03] transition duration-300 ease-in-out">
               Anasayfa
             </Link>
           </li>
           <li>
             <a 
               href="#about" 
-              className="text-white font-bold hover:text-[#ACFC03] transition duration-300 ease-in-out">
+              className="font-bold hover:text-[#ACFC03] transition duration-300 ease-in-out">
               Hakkımızda
             </a>
           </li>
           <li>
             <Link 
               href="#products" 
-              className="text-white font-bold hover:text-[#ACFC03] transition duration-300 ease-in-out">
+              className="font-bold hover:text-[#ACFC03] transition duration-300 ease-in-out">
               Ürünler
             </Link>
           </li>
           <li>
             <Link 
               href="#contact" 
-              className="text-white font-bold hover:text-[#ACFC03] transition duration-300 ease-in-out">
+              className="font-bold hover:text-[#ACFC03] transition duration-300 ease-in-out">
               İletişim
             </Link>
           </li>
@@ -64,9 +69,9 @@ const Header = () => {
       </nav>
 
       {/* Sosyal Medya Linkleri ve Telefon */}
-      <div className="flex items-center space-x-6">
+      <div className="hidden md:flex items-center space-x-2  md:space-x-6">
         {/* Sosyal Medya Linkleri */}
-        <div className="flex space-x-8">
+        <div className="flex space-x-2 md:space-x-8">
           <Link 
             href="https://wa.me/905301533475" 
             target="_blank" 
@@ -104,6 +109,27 @@ const Header = () => {
           </Link>
         </div>
       </div>
+      <div className="flex flex-col gap-2 text-xs md:text-md text-white font-semibold md:hidden">
+          <Link
+            href="tel:+905301533475"
+            className="hover:text-[#ACFC03] transition duration-300 ease-in-out"
+          >
+            +90 530 153 34 75
+          </Link>
+          <Link
+            href="tel:+905393661709"
+            className="hover:text-[#ACFC03] transition duration-300 ease-in-out"
+          >
+            +90 539 366 1709
+          </Link>
+        </div>
+             {/* Mobile Hamburger Icon */}
+      <div className="lg:hidden flex items-center">
+        <button onClick={toggleMenu} className="text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 6h18M3 12h18M3 18h18"></path></svg>
+        </button>
+      </div>
+
     </header>
   );
 };
