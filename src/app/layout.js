@@ -2,7 +2,7 @@ import "./globals.css";
 import Header from "./components/root/header/header";
 import Footer from "./components/root/footer/footer";
 import { Montserrat } from 'next/font/google'; // Montserrat fontunu ekle
-import Link from "./components/root/link/link";
+import Trendyol from "./components/root/link/Trendyol";
 
 // Fontu yapılandır
 const montserrat = Montserrat({
@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${montserrat.className}`}>
         <Header />
-        <Link/>
+        <Trendyol/>
         {children}
         <Footer />
       </body>

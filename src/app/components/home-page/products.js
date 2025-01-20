@@ -19,7 +19,7 @@ const products = [
 
 const Products = () => {
   return (
-    <div className="py-10 absolute top-[28.5rem] z-50 container left-1/2 transform -translate-x-1/2 w-full">
+    <div id="products" className="py-10 absolute top-[28.5rem] z-50 container left-1/2 transform -translate-x-1/2 w-full">
       <h2 className="text-4xl font-extrabold text-center text-white mb-12">Ürünlerimiz</h2>
       <Swiper
         modules={[Navigation, Autoplay]}
@@ -67,13 +67,11 @@ const Products = () => {
                 {product.name}
               </h3>
               {/* Ürünleri Gör Butonu */}
-              <button
-                as={Link}
-                href="#"
-                className="w-full h-full flex items-center gap-4 justify-center absolute bottom-0 left-1/2 transform -translate-x-1/2 text-lg font-semibold text-white opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-12 group-hover:translate-y-0 bg-black/80 z-40"
+              <Link
+href="https://www.trendyol.com/magaza/artrans-pazarlama-m-1081382?sst=0"      className="w-full h-full flex items-center gap-4 justify-center absolute bottom-0 left-1/2 transform -translate-x-1/2 text-lg font-semibold text-white opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-12 group-hover:translate-y-0 bg-black/80 z-40"
               >
                 <span> Ürünleri Gör</span>
-              </button>
+              </Link>
             </div>
           </SwiperSlide>
         ))}

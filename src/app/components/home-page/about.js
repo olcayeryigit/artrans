@@ -2,10 +2,10 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="bg-gray-50 mt-44 pt-20">
+    <section id="about" className="bg-gray-50 mt-44 pt-20">
       <div className="container mx-auto flex">
         {/* Dikey Artrans Pazarlama */}
-        <div className="text-4xl  h-8 w-60 font-bold text-gray-800 opacity-10 transform -rotate-90 mt-36 ">
+        <div className="text-6xl  h-8 w-60 font-bold text-gray-800 opacity-10 transform -rotate-90 mt-72 ">
           ARTRANS PAZARLAMA
         </div>
         <div>
@@ -27,6 +27,16 @@ const About = () => {
           de klasik tasarım anlayışına hitap eden detaylarla özenle
           hazırlanmıştır.
         </p>
+        <p className="text-gray-700 text-lg leading-relaxed mb-8">
+
+        Kadın giyim, erkek giyim ve çocuk giyim kategorilerimizle her yaşa ve tarza uygun seçenekler sunarken, ev tekstili, mutfak gereçleri ve banyo tekstili ürünlerimizle evlerinizi daha şık ve işlevsel bir hale getiriyoruz. Ayrıca, takı ve aksesuar koleksiyonumuzla tarzınızı tamamlayacak özel parçalar da bulabilirsiniz.
+        </p>
+        <p className="text-gray-700 text-lg leading-relaxed mb-8">
+
+        Mağazamızda alışverişinizi hızlı ve güvenli bir şekilde tamamlayabilirsiniz. Güçlü güvenlik önlemleri ve hızlı ödeme seçenekleriyle, ürünlerinizi en kısa sürede kapınıza teslim ediyoruz.
+        </p>
+
+       
         </div>
       </div>
     </section>
