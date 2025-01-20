@@ -106,7 +106,7 @@ const Header = () => {
             href="tel:+905393661709"
             className="hover:text-[#ACFC03] transition duration-300 ease-in-out"
           >
-                 <span>Mahir Çaylar: </span>  
+                 <span>Mahir Çayan Çaylar: </span>  
 
             <span className='ps-4'>+90 539 366 1709</span>  
 
