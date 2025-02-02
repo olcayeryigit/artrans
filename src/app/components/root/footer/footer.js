@@ -63,7 +63,7 @@ const Footer = () => {
 </div>        </Link>
       
           <Link 
-            href="https://www.instagram.com/artrans.pazarlama/profilecard/?igsh=NXluZWF4OHByMDRm" 
+            href="https://www.instagram.com/artrans.pazarlama" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="text-gray-800 hover:text-pink-600 transition duration-300 ease-in-out"

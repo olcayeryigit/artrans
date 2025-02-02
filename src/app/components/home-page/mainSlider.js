@@ -53,7 +53,7 @@ const MainSlider = () => {
               <img
                 src="/images/giyim.png"
                 alt="Giyim"
-                className="w-full  h-52 md:h-[19rem] object-contain"
+                className="w-full  h-48 md:h-[19rem] object-contain"
               />
             </div>
           </div>
@@ -73,7 +73,7 @@ const MainSlider = () => {
               <img
                 src="/images/hediye.png"
                 alt="Hediye Seçenekleri"
-                className="w-full  h-48 md:h-[19rem] object-contain"
+                className="w-full  h-40 md:h-[19rem] object-contain"
               />
             </div>
           </div>

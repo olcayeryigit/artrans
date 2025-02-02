@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import Head from "next/head";
 
 
 
@@ -28,7 +29,7 @@ const ProductCard = ({ product }) => {
     <div className="mx-2 md:mx-0 md:w-full mx-auto relative rounded-lg overflow-hidden text-center group">
       <img
         src={product.image}
-        alt={product.name}
+        alt={`${product.name} Ürünü`}
         className="w-full h-60 object-cover transition-transform duration-300 group-hover:scale-110"
       />
       <div
@@ -59,7 +60,15 @@ const ProductCard = ({ product }) => {
 
 const Products = () => {
   return (
-    <div id="products" className=" py-4 md:py-10 relative md:absolute md:top-[28.5rem] z-50 container md:left-1/2 transform md:-translate-x-1/2 w-full">
+    <div id="products" className=" py-4 md:py-10 relative md:absolute md:top-[27.5rem] z-50 container md:left-1/2 transform md:-translate-x-1/2 w-full px-4 md:px-0">
+       <Head>
+        <title>Ürünlerimiz - Artrans Pazarlama</title>
+        <meta name="description" content="Artrans Pazarlama'dan kaliteli ürünler, hemen keşfedin!" />
+        <meta name="keywords" content="e-ticaret, ürünler, online alışveriş, kadın giyim, erkek giyim" />
+        <meta property="og:title" content="Ürünlerimiz - Artrans Pazarlama" />
+        <meta property="og:description" content="Artrans Pazarlama'dan kaliteli ürünler, hemen keşfedin!" />
+      
+      </Head>
       <h2 className="text-4xl font-extrabold text-center text-black md:text-white mb-4 md:mb-12">Ürünlerimiz</h2>
       <Swiper
         modules={[Navigation, Autoplay]}

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 
@@ -35,7 +34,7 @@ const Contact = () => {
 </div>        </Link>
       
           <Link 
-            href="https://www.instagram.com/artrans.pazarlama/profilecard/?igsh=NXluZWF4OHByMDRm" 
+            href="https://www.instagram.com/artrans.pazarlama" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="text-gray-800 hover:text-pink-600 transition duration-300 ease-in-out"
@@ -77,12 +76,12 @@ const Contact = () => {
         {/* Video Alanı */}
         <div className="relative w-full md:w-1/2">
           <div className="relative bg-white rounded-lg shadow-md overflow-hidden w-full h-72">
-            <Image
-              src="/video/1.gif"
-              alt="Bize Ulaşın Video"
-              fill
-              className="object-cover"
-            />
+          <img
+  src="/video/1.webp"
+  alt="Artrans Pazarlama Bize Ulaşın Video"
+  className="object-cover w-full h-full"
+/>
+
           </div>
 
           <div className="absolute bottom-4 left-4">
