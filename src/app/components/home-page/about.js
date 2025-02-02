@@ -5,7 +5,7 @@ const About = () => {
     <section id="about" className="bg-gray-50 mt-8 md:mt-44 md:pt-20 px-8 md:px-0">
       <div className="container mx-auto flex">
         {/* Dikey Artrans Pazarlama */}
-        <div className="hidden md:block text-6xl  h-8 md:w-60 font-bold text-gray-800 opacity-10 transform -rotate-90  md:mt-72 ">
+        <div className="hidden md:block text-6xl  h-20 md:w-48 font-bold text-gray-800 opacity-10 transform -rotate-90  md:mt-72 ">
           ARTRANS PAZARLAMA
         </div>
         <div>
@@ -13,7 +13,7 @@ const About = () => {
           Hakkımızda - Artrans Pazarlama
         </h2>
         <p className="text-gray-700 text-xs md:text-lg leading-relaxed mb-8">
-          Artrans Pazarlama olarak, ev tekstili ve ev ürünleri sektöründe kalite,
+          Artrans Pazarlama olarak, tekstil, ev tekstili ve ev ürünleri sektöründe kalite,
           şıklık ve fonksiyonelliği bir araya getiren bir marka olma hedefiyle
           faaliyet gösteriyoruz. Kurulduğumuz günden bu yana, evleri daha
           sıcak, konforlu ve estetik bir yaşam alanına dönüştürmek için
@@ -31,11 +31,18 @@ const About = () => {
 
         Kadın giyim, erkek giyim ve çocuk giyim kategorilerimizle her yaşa ve tarza uygun seçenekler sunarken, ev tekstili, mutfak gereçleri ve banyo tekstili ürünlerimizle evlerinizi daha şık ve işlevsel bir hale getiriyoruz. Ayrıca, takı ve aksesuar koleksiyonumuzla tarzınızı tamamlayacak özel parçalar da bulabilirsiniz.
         </p>
-        <p className="text-gray-700 text-xs md:text-lg  leading-relaxed mb-8">
+       
+        <p className="text-gray-700 text-xs md:text-lg leading-relaxed mb-8">
+  Mobilya koleksiyonumuz ile evinizin her köşesine şıklık ve konfor katıyoruz. 
+  Modern, klasik ve minimal tarzlara hitap eden koltuk takımları, yemek masaları, 
+  TV üniteleri ve daha birçok seçenekle yaşam alanlarınızı yeniden şekillendiriyoruz. 
+  Kaliteli malzemeler ve özgün tasarımlar ile üretilen mobilyalarımız, uzun ömürlü 
+  kullanım sunarken estetik açıdan da beklentilerinizi karşılıyor.
+</p>
+<p className="text-gray-700 text-xs md:text-lg  leading-relaxed mb-8">
 
-        Mağazamızda alışverişinizi hızlı ve güvenli bir şekilde tamamlayabilirsiniz. Güçlü güvenlik önlemleri ve hızlı ödeme seçenekleriyle, ürünlerinizi en kısa sürede kapınıza teslim ediyoruz.
-        </p>
-
+Mağazamızda alışverişinizi hızlı ve güvenli bir şekilde tamamlayabilirsiniz. Güçlü güvenlik önlemleri ve hızlı ödeme seçenekleriyle, ürünlerinizi en kısa sürede kapınıza teslim ediyoruz.
+</p>
        
         </div>
       </div>

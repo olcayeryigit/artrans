@@ -13,13 +13,14 @@ import Link from "next/link";
 import Image from "next/image";
 
 const products = [
-  { id: 1, name: "Kadın Giyim", image: "/images/products/1.png", background: "#FF5733" },
-  { id: 2, name: "Erkek Giyim", image: "/images/products/2.png", background: "#33B5FF" },
+  { id: 1, name: "Kadın Giyim", image: "/images/products/1.png", background: "#33B5FF" },
+  { id: 2, name: "Erkek Giyim", image: "/images/products/2.png", background: "#FF5733" },
   { id: 3, name: "Çocuk Giyim", image: "/images/products/3.png", background: "#FF33A6" },
   { id: 4, name: "Ev Tekstili", image: "/images/products/4.png", background: "#33FF57" },
   { id: 5, name: "Mutfak Gereçleri", image: "/images/products/5.png", background: "#FFC300" },
   { id: 6, name: "Banyo Tekstili", image: "/images/products/6.png", background: "#DA33FF" },
   { id: 7, name: "Takı ve Aksesuar", image: "/images/products/7.png", background: "#FF5733" },
+  { id: 8, name: "Mobilya", image: "/images/products/8.png", background: "#5856CB" },
 ];
 
 const ProductCard = ({ product }) => {
@@ -37,11 +38,7 @@ const ProductCard = ({ product }) => {
           zIndex: 1,
         }}
       ></div>
-      <img
-        src="/logo/a.png"
-        className="rounded-full w-10 h-10 md:w-12 md:h-12 absolute bottom-2 md:bottom-3 left-16 md:left-6  z-50 group-hover:bottom-20 group-hover:rotate-90 transition-all duration-800"
-    
-      />
+      
       <h3
         className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-lg font-semibold text-white z-10"
         style={{

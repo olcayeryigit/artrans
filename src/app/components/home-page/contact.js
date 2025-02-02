@@ -54,17 +54,17 @@ const Contact = () => {
             <div className="flex flex-col gap-2 mt-6">
             <Link
             href="tel:+905301533475"
-            className="hover:text-[#ACFC03] transition duration-300 ease-in-out"
+            className="hover:text-[#3B82F6] transition duration-300 ease-in-out"
           >
    <span>Anıl Çaylar: </span>  
    <span className='ps-4'>+90 530 153 34 75</span>            </Link>
           <Link
             href="tel:+905393661709"
-            className="hover:text-[#ACFC03] transition duration-300 ease-in-out"
+            className="hover:text-[#3B82F6] transition duration-300 ease-in-out"
           >
            <span>Mahir Çayan Çaylar: </span>  
 
-<span className='ps-4'>+90 539 366 1709</span>  
+<span className='ps-4'>+90 539 366 17 09</span>  
           </Link>       </div>   </div>
           <div>
             <h3 className="text-2xl font-semibold text-gray-800">Trendyol Mağazamız</h3>
@@ -86,17 +86,13 @@ const Contact = () => {
           </div>
 
           <div className="absolute bottom-4 left-4">
-          <div className="flex gap-2 items-center">
-               <img
-                src="/logo/a.png"
-                alt="logo icon"
-                className="w-8 h-8 object-contain rounded-full"
-              /> 
-          <span className="text-white font-bold">Artrans Pazarlama</span>
+          <p className="text-white font-bold">
+             
+       Artrans Pazarlama
 
-          </div>
+          </p>
        
-              <div className="ms-10 text-white font-bold" > Hızlı ve Güvenli Alışveriş</div>
+              <p className=" text-white font-bold" > Hızlı ve Güvenli Alışveriş</p>
           </div>
         </div>
       </div>

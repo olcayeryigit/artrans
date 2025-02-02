@@ -1,7 +1,6 @@
 "use client";
 import Link from 'next/link';
 import React from 'react';
-import Logo from '../../common/logo';
 
 const Footer = () => {
   return (
@@ -9,13 +8,11 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           {/* Logo */}
-          <div className="flex items-center mb-6 md:mb-0">
-            <Logo 
-              src="/logo/logo.png" 
-              height="85px" 
-              alt="Logo" 
-            />
-          </div>
+          <Link href="/" className="hidden md:inline font-extrabold bg-gradient-to-r from-[#ACFC03] via-[#EFFFCC] to-[#F8FFEB] text-transparent bg-clip-text text-2xl">
+        ARTRANS PAZARLAMA
+
+    </Link>
+        
 
           {/* Navigasyon Menüsü */}
           <nav className="flex flex-col md:flex-row items-center mb-6 md:mb-0">

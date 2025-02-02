@@ -1,7 +1,6 @@
 "use client";
 import Link from 'next/link';
 import React, { useState } from 'react';
-import Logo from '../../common/logo';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,24 +10,19 @@ const Header = () => {
   };
 
   return (
-    <header id="home" className="flex justify-between items-center p-4 bg-black">
+    <header id="home" className=" bg-black">
+
+      <div className='container mx-auto flex justify-between items-center py-4 px-8'>
       {/* Logo */}
       <div className="flex items-center">
-        <div className="hidden md:inline">
-          <Logo
-          src="/logo/logo.png"
-          height="85px"
-          alt="Logo"
-        />
-    </div>
+        <Link href="/" className=" font-extrabold bg-gradient-to-r from-[#ACFC03] via-[#EFFFCC] to-[#F8FFEB] text-transparent bg-clip-text text-xl md:text-2xl">
+        ARTRANS PAZARLAMA
+
+    </Link>
         
 
     <div className="md:hidden">
-          <Logo
-          src="/logo/logo.png"
-          height="50px"
-          alt="Logo"
-        />
+     
     </div>
 
       </div>
@@ -36,6 +30,7 @@ const Header = () => {
  
       {/* Navigasyon Menüsü (Desktop & Mobile) */}
       <nav>
+  
         <ul className={`bg-white  md:bg-black text-black md:text-white lg:flex space-x-2 text-center md:text-start md:space-x-6  ${isMenuOpen ? 'flex flex-col gap-2 md:gap-0  absolute top-20 left-0 w-full bg-black py-4 z-[999999]' : 'hidden'}`}>
           <li>
             <Link 
@@ -94,7 +89,7 @@ const Header = () => {
         </div>
 
         {/* Telefon */}
-        <div className="flex flex-col gap-2 text-md text-white font-semibold">
+        <div className="flex flex-col gap-1 text-md text-white font-semibold">
           <Link
             href="tel:+905301533475"
             className="hover:text-[#ACFC03] transition duration-300 ease-in-out"
@@ -108,32 +103,38 @@ const Header = () => {
           >
                  <span>Mahir Çayan Çaylar: </span>  
 
-            <span className='ps-4'>+90 539 366 1709</span>  
+            <span className='ps-4'>+90 539 366 17 09</span>  
 
           </Link>
         </div>
       </div>
-      <div className="flex flex-col gap-2 text-xs md:text-md text-white font-semibold md:hidden">
-          <Link
-            href="tel:+905301533475"
-            className="hover:text-[#ACFC03] transition duration-300 ease-in-out"
-          >
-            +90 530 153 34 75
-          </Link>
-          <Link
-            href="tel:+905393661709"
-            className="hover:text-[#ACFC03] transition duration-300 ease-in-out"
-          >
-            +90 539 366 1709
-          </Link>
-        </div>
+    
              {/* Mobile Hamburger Icon */}
       <div className="lg:hidden flex items-center">
         <button onClick={toggleMenu} className="text-white">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 6h18M3 12h18M3 18h18"></path></svg>
         </button>
       </div>
+      </div>
 
+      <div className="md:hidden absolute top-20 z-50 left-8 flex flex-col gap-2 text-xs text-white font-semibold">
+          <Link
+            href="tel:+905301533475"
+            className="hover:text-[#ACFC03] transition duration-300 ease-in-out"
+          >
+     <span>Anıl Çaylar: </span>  
+           <span className='ps-4'>+90 530 153 34 75</span>  
+          </Link>
+          <Link
+            href="tel:+905393661709"
+            className="hover:text-[#ACFC03] transition duration-300 ease-in-out"
+          >
+                 <span>Mahir Çayan Çaylar: </span>  
+
+            <span className='ps-4'>+90 539 366 17 09</span>  
+
+          </Link>
+        </div>
     </header>
   );
 };
