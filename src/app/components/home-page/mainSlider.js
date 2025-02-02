@@ -59,24 +59,6 @@ const MainSlider = () => {
           </div>
         </SwiperSlide>
 
-        {/* Slide 3 */}
-        <SwiperSlide>
-          <div className="flex flex-col md:flex-row items-center px-8 pt-24 md:py-8 md:px-16">
-            <div className="w-full md:w-1/2 pr-6">
-              <TextSection
-                title="Eviniz İçin Şık Perde Modelleri"
-                description="Evinizi tamamlayan zarif perde seçeneklerimize göz atın."
-              />
-            </div>
-            <div className="w-full md:w-1/2 ">
-              <img
-                src="/images/perde.png"
-                alt="Perde"
-                className="w-full  h-48 md:h-[19rem] object-contain"
-              />
-            </div>
-          </div>
-        </SwiperSlide>
 
         {/* Slide 4 */}
         <SwiperSlide>
